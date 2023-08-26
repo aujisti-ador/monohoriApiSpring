@@ -7,8 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MonohoriApiApplication {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(MonohoriApiApplication.class, args);
-		System.out.println("hahhahahha");
+		SpringApplication.run(MonohoriApiApplication.class, args);
 	}
 
 }
