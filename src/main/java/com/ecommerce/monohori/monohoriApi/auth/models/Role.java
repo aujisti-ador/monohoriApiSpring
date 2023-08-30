@@ -1,4 +1,4 @@
-package com.ecommerce.monohori.monohoriApi.models;
+package com.ecommerce.monohori.monohoriApi.auth.models;
 import jakarta.persistence.*;
 
 @Entity

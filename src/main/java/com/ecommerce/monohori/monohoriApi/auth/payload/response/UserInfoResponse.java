@@ -1,4 +1,4 @@
-package com.ecommerce.monohori.monohoriApi.payload.response;
+package com.ecommerce.monohori.monohoriApi.auth.payload.response;
 
 import java.util.List;
 

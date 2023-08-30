@@ -1,9 +1,9 @@
-package com.ecommerce.monohori.monohoriApi.security.jwt;
+package com.ecommerce.monohori.monohoriApi.auth.security.jwt;
 
 import java.security.Key;
 import java.util.Date;
 
-import com.ecommerce.monohori.monohoriApi.security.services.UserDetailsImpl;
+import com.ecommerce.monohori.monohoriApi.auth.security.services.UserDetailsImpl;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 

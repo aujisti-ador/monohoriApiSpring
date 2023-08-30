@@ -1,8 +1,8 @@
-package com.ecommerce.monohori.monohoriApi.security.jwt;
+package com.ecommerce.monohori.monohoriApi.auth.security.jwt;
 
 import java.io.IOException;
 
-import com.ecommerce.monohori.monohoriApi.security.services.UserDetailsServiceImpl;
+import com.ecommerce.monohori.monohoriApi.auth.security.services.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

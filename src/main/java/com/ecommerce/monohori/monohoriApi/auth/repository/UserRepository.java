@@ -1,6 +1,6 @@
-package com.ecommerce.monohori.monohoriApi.repository;
+package com.ecommerce.monohori.monohoriApi.auth.repository;
 
-import com.ecommerce.monohori.monohoriApi.models.User;
+import com.ecommerce.monohori.monohoriApi.auth.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

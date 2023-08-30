@@ -1,4 +1,4 @@
-package com.ecommerce.monohori.monohoriApi.security.jwt;
+package com.ecommerce.monohori.monohoriApi.auth.security.jwt;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

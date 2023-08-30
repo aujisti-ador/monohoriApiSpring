@@ -1,4 +1,4 @@
-package com.ecommerce.monohori.monohoriApi.controllers;
+package com.ecommerce.monohori.monohoriApi.auth.controllers;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;

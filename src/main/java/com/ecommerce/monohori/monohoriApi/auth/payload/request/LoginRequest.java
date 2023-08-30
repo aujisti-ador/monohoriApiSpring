@@ -1,4 +1,4 @@
-package com.ecommerce.monohori.monohoriApi.payload.request;
+package com.ecommerce.monohori.monohoriApi.auth.payload.request;
 
 import jakarta.validation.constraints.NotBlank;
 

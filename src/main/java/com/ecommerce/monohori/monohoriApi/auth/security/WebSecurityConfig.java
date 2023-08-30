@@ -1,8 +1,8 @@
-package com.ecommerce.monohori.monohoriApi.security;
+package com.ecommerce.monohori.monohoriApi.auth.security;
 
-import com.ecommerce.monohori.monohoriApi.security.jwt.AuthEntryPointJwt;
-import com.ecommerce.monohori.monohoriApi.security.jwt.AuthTokenFilter;
-import com.ecommerce.monohori.monohoriApi.security.services.UserDetailsServiceImpl;
+import com.ecommerce.monohori.monohoriApi.auth.security.jwt.AuthTokenFilter;
+import com.ecommerce.monohori.monohoriApi.auth.security.jwt.AuthEntryPointJwt;
+import com.ecommerce.monohori.monohoriApi.auth.security.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

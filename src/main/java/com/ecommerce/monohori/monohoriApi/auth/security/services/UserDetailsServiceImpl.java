@@ -1,7 +1,7 @@
-package com.ecommerce.monohori.monohoriApi.security.services;
+package com.ecommerce.monohori.monohoriApi.auth.security.services;
 
-import com.ecommerce.monohori.monohoriApi.models.User;
-import com.ecommerce.monohori.monohoriApi.repository.UserRepository;
+import com.ecommerce.monohori.monohoriApi.auth.models.User;
+import com.ecommerce.monohori.monohoriApi.auth.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

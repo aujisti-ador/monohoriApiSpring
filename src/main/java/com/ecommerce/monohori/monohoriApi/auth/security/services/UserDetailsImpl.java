@@ -1,6 +1,6 @@
-package com.ecommerce.monohori.monohoriApi.security.services;
+package com.ecommerce.monohori.monohoriApi.auth.security.services;
 
-import com.ecommerce.monohori.monohoriApi.models.User;
+import com.ecommerce.monohori.monohoriApi.auth.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
