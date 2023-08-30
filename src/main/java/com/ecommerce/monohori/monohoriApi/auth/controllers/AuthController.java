@@ -11,6 +11,11 @@ import com.ecommerce.monohori.monohoriApi.auth.security.services.UserDetailsImpl
 import com.ecommerce.monohori.monohoriApi.auth.payload.response.MessageResponse;
 import com.ecommerce.monohori.monohoriApi.auth.payload.response.UserInfoResponse;
 import com.ecommerce.monohori.monohoriApi.auth.repository.UserRepository;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -49,6 +54,15 @@ public class AuthController {
     @Autowired
     JwtUtils jwtUtils;
 
+    @Operation(
+            summary = "signin"
+//            description = "Get a Tutorial object by specifying its id. The response is Tutorial object with id, title, description and published status.",
+//            tags = { "signin", "Post" }
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", content = { @Content(schema = @Schema(implementation = UserInfoResponse.class), mediaType = "application/json") }),
+            @ApiResponse(responseCode = "404", content = { @Content(schema = @Schema()) }),
+            @ApiResponse(responseCode = "500", content = { @Content(schema = @Schema()) }) })
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 

@@ -1,4 +1,4 @@
-package com.ecommerce.monohori.monohoriApi.auth.security;
+package com.ecommerce.monohori.monohoriApi.auth.security.config;
 
 import com.ecommerce.monohori.monohoriApi.auth.security.jwt.AuthTokenFilter;
 import com.ecommerce.monohori.monohoriApi.auth.security.jwt.AuthEntryPointJwt;
@@ -61,8 +61,8 @@ public class WebSecurityConfig {
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/api/auth/**").permitAll()
-                                .requestMatchers("/api/test/**").permitAll()
+                        auth.requestMatchers("/api/auth/**", "/swagger-ui/**", "/v3/**").permitAll()
+                                .requestMatchers("/api/test/**", "/swagger-ui/**", "/v3/**").permitAll()
                                 .anyRequest().authenticated()
                 );
 
